@@ -1,0 +1,92 @@
+@import url('https://fonts.cdnfonts.com/css/jetbrains-mono-2');
+*{
+font-family: 'JetBrains Mono', sans-serif;
+}
+.welcomeBoxContainer
+{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+}
+.welcomeBox
+{
+    width: 500px;
+    height: 200px;
+    border-radius: 5px; 
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.596);
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    overflow: hidden;
+}
+.initialWelcome {
+    margin-top: 25px;
+    background-color: rgb(255, 255, 255);
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.welcomeWindowBar
+{
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 2px 0;
+    background-color: rgb(213, 213, 213);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between; /*to make the elements on its own place maybe*/
+}
+.welcomeWindowBarElements
+{
+    gap: 10px;
+    margin-right: 10px;
+    justify-content: right;
+    display:flex;
+    flex-direction: row;
+}
+.welcomeWindowBarText
+{
+    justify-content: left;
+    margin-left: 10px;
+}
+.welcomeText{
+        font-size: 1.5rem;
+}
+.getStarted
+{
+    border-style:solid;
+    border-width:1px;
+    width:150px;
+    height: 30px;
+    background-color: rgb(166, 166, 166);
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.minimize, .maximize, .close{
+    border-style: none;
+    background-color: transparent;
+}
+.minimize:hover, .maximize:hover
+{
+    background-color: white;
+}
+.close:hover{
+    background-color: red;
+}
+.getStarted:hover
+{
+    background-color: rgb(223, 223, 223);;
+}
+.welcomeBox:hover{
+    box-shadow: 0 0px 10px rgba(89, 89, 89, 0.596);
+}
