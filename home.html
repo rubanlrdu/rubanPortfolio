@@ -7,21 +7,53 @@
     <link rel="stylesheet" href="homeStyles.css">
 </head>
 <body>
+    <div class="bgTextSuper">
+        <div class="bgTextContainer">
+            <h1 class="bgText">helo !</h1>
+        </div>
+    </div>
     <div class="welcomeBoxContainer">
         <div class="welcomeBox">
             <div class="welcomeWindowBar">
                 <div class="welcomeWindowBarText">helo !</div>
             <div class="welcomeWindowBarElements">
-                <button class="minimize"> - </button>
-                <button class="maximize"> &#9744</button>
-                <button class="close"> &#9746</button>
+                <button class="minimize" title="WARNING ! there is no taskbar."> - </button>
+                <button class="maximize" title="whats the point with this."> &#9744</button>
+                <button class="close" title="Close"> &#9746</button>
             </div>
             </div>
             <div class="initialWelcome" id="welcome">
                 <h1 class="welcomeText">Welcome to my portfolio !</h1>
-                <a class="getStarted" href="/portfolio.html">Get started</a>
+                <a class="getStarted" title="Open portfolio" href="/portfolio.html">Get started</a>
+            </div>
+        </div>
+    </div>
+    <div class="errorBoxContainer">
+        <div class="errorBox">
+            <div class="errorWindowBar">
+                <div class="errorWindowBarText">error !</div>
+            <div class="errorWindowBarElements">
+                <button class="minimize" title="WARNING ! there is no taskbar."> - </button>
+                <button class="maximize" title="there is no point with this."> &#9744</button>
+                <a class="errorClose" id="errorClose" title="Close" href=""> &#9746</a>
+            </div>
+            </div>
+            <div class="errorContent" >
+                <h1 class="errorText">U cant close it</h1>
+                <a class="errorResponse" href="">Okay</a>
             </div>
         </div>
     </div>
 </body>
+<script>
+document.querySelector('.close').onclick = function() {
+    document.querySelector('.errorBoxContainer').classList.add('active');
+};
+document.querySelector(".errorResponse").onclick=function() {
+    document.querySelector(".errorBoxContainer").classList.add('inactive');
+};
+document.querySelector(".errorClose").onclick=function() {
+    document.querySelector(".errorBoxContainer").classList.add('inactive');
+};
+</script>
 </html>

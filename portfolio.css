@@ -1,0 +1,138 @@
+@import url('https://fonts.cdnfonts.com/css/jetbrains-mono-2');
+*{
+font-family: 'JetBrains Mono', sans-serif;
+}
+.navBarContainer{
+    display:flex;
+    justify-content: center;
+    margin-top:30px;
+}
+.navBar{
+    display:flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    width: 1200px;
+    justify-content: space-between;
+    border-style:solid;
+    border-width:2px;
+    border-radius:5px;
+}
+.navBarRightContainer{
+    display: flex;
+}
+.navBarRight
+{
+    gap:0;
+    display:flex;
+    flex-direction: row;
+}
+#navBarButtons{
+    margin:0;
+    padding: 15px;
+    text-decoration:none;
+    font-size: 1.2rem;
+}
+.aboutme, .featured, .contact{
+    border-style: solid;
+    border-width:0 0 0 2px;
+    background-color: beige;
+}
+.contact{
+    border-radius: 0 5px 5px 0;
+}
+.name{
+    margin-left:15px;
+}
+.aboutme:hover, .featured:hover, .contact:hover{
+    background-color: rgb(188, 188, 188);
+}
+/* ABOUT ME PAGE */
+
+.allAboutMe{
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+}
+
+.aboutContainer{
+    max-width:40%;
+    margin-left:50px;
+    margin-top:150px;
+    background-color: beige;
+    border-style:solid;
+    border-width:2px;
+    border-radius: 5px;
+    overflow:hidden;
+}
+.aboutText{
+    font-size:2rem;
+    margin-top:0px;
+    margin-left:20px;
+    margin-right:20px;
+}
+.aboutHelo{
+    font-size:4rem;
+    margin-top:10px;
+    margin-bottom:5px;
+    margin-left:20px;
+}
+.aboutmeWindowBar{
+    display:flex;
+    justify-content: space-between;
+    background-color: white;
+    height:35px;
+    align-items: center;
+    border-style:solid;
+    border-width:0 0 2px 0;
+    border-radius: 5px 5px 0 0;
+}
+.aboutmeWindowBarText{
+    margin-left:15px;
+}
+.aboutmeWindowBarElements{
+    margin-right:15px;
+}
+.minimize, .maximize,.close{
+    border-style:none;
+    background-color: transparent;
+}
+.minimize:hover, .maximize:hover
+{
+    background-color: rgb(205, 205, 205);
+}
+.close:hover{
+    background-color: red;
+}
+/*profile pic*/
+
+.pfpContainer{
+    display:flex;
+    flex-direction: column;
+    margin-top:50px;
+    width: 350px;
+    height:370px;
+    background-color: beige;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.pfp{
+    object-fit: cover;
+    width:350px;
+    height:350px;
+}
+.pfpWindowBar{
+    display:flex;
+    padding-top: 5px;
+    padding-bottom:5px;
+    padding-left:15px;
+    padding-right:15px;
+    justify-content: space-between;
+    background-color: white;
+    height:35px;
+    align-items: center;
+    border-style:solid;
+    border-width:0 0 2px 0;
+    border-radius: 5px 5px 0 0;
+}

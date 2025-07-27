@@ -2,12 +2,19 @@
 *{
 font-family: 'JetBrains Mono', sans-serif;
 }
+body{
+background-color: beige;
+}
 .welcomeBoxContainer
 {
+    position: absolute;
     display:flex;
     align-items:center;
     justify-content:center;
-    min-height:100vh;
+    min-height:100%;
+    min-width: 100%;
+    z-index:-1;
+    margin:auto;
 }
 .welcomeBox
 {
@@ -19,6 +26,7 @@ font-family: 'JetBrains Mono', sans-serif;
     border-color: black;
     border-width: 2px;
     overflow: hidden;
+    background-color: white;
 }
 .initialWelcome {
     margin-top: 25px;
@@ -55,10 +63,10 @@ font-family: 'JetBrains Mono', sans-serif;
     justify-content: left;
     margin-left: 10px;
 }
-.welcomeText{
+.welcomeText {
         font-size: 1.5rem;
 }
-.getStarted
+.getStarted , .errorResponse
 {
     border-style:solid;
     border-width:1px;
@@ -72,21 +80,111 @@ font-family: 'JetBrains Mono', sans-serif;
     justify-content: center;
     align-items: center;
 }
-.minimize, .maximize, .close{
+.minimize, .maximize, .close, .errorClose{
     border-style: none;
     background-color: transparent;
+    text-decoration: none;
+    color:black;
 }
 .minimize:hover, .maximize:hover
 {
     background-color: white;
 }
-.close:hover{
+.close:hover, .errorClose:hover{
     background-color: red;
 }
-.getStarted:hover
+.getStarted:hover, .errorResponse:hover
 {
     background-color: rgb(223, 223, 223);;
 }
-.welcomeBox:hover{
+.welcomeBox:hover,.errorBox:hover{
     box-shadow: 0 0px 10px rgba(89, 89, 89, 0.596);
+}
+
+/*ERROR BOX STYLES*/
+
+.errorBoxContainer
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    width: 100vh;
+    z-index: 100;
+}
+.errorBox
+{
+    background-color: white;
+    border-style: solid;
+    border-width:2px;
+    width:300px;
+    height:150px;
+    border-radius: 5px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.596);
+}
+.errorWindowBar
+{
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 2px 0;
+    background-color: rgb(213, 213, 213);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between; /*to make the elements on its own place maybe*/
+}
+.errorWindowBarElements
+{
+    gap: 10px;
+    margin-right: 10px;
+    justify-content: right;
+    display:flex;
+    flex-direction: row;
+}
+.errorWindowBarText
+{
+    justify-content: left;
+    margin-left: 10px;
+}
+.errorContent
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.errorText{
+    font-size:1.5rem;
+    color:red;
+}
+.errorBoxContainer, .errorBoxContainer.inactive {
+    /* ...existing code... */
+    display: none; /* hide by default */
+}
+.errorBoxContainer.active {
+    display: flex; /* show when active */
+}
+/* BG TEXT*/
+.bgTextSuper{
+    display: flex;
+    position:absolute;
+    z-index:-10;
+    right:0;
+    bottom:0;
+}
+.bgTextContainer
+{
+    height:700px;
+    width:1500px;
+    overflow:hidden;
+
+}
+.bgText{
+    font-size:25rem;
+    color:rgba(0, 0, 0, 0.266);
 }

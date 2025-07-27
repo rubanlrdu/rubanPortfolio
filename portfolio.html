@@ -3,11 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ruban Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
     <div>
-        hello maybe ?
+        <div class="navBarContainer">
+            <div class="navBar">
+                <div class="navBarLeft">
+                    <h1 class="name">ruban lourdu f</h1>
+                </div>
+                <div  class="navBarRightContainer">
+                    <div class="navBarRight">
+                        <button class="aboutme" id="navBarButtons">about me</button>
+                        <button class="featured" id="navBarButtons">featured</button>
+                        <button class="contact" id="navBarButtons">contact</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="allAboutMe">
+            <div class="aboutContainer">
+                <div class="aboutmeWindowBar">
+                    <div class="aboutmeWindowBarText">about me !</div>
+                    <div class="aboutmeWindowBarElements">
+                        <button class="minimize" title="WARNING ! there is no taskbar."> - </button>
+                        <button class="maximize" title="whats the point with this."> &#9744</button>
+                        <button class="close" title="Close"> &#9746</button>
+                    </div>
+                </div>
+                <h1 class="aboutHelo">helo !</h1>
+                <p class="aboutText">i am a fresher from computer science background with a lot of enthusiasm in java full
+                    stack development. also i love to consume and create art. for your knowledge this whole
+                    project is written by me.
+                </p>
+            </div>
+            <div class="pfpContainer">
+                <div class="pfpWindowBar">
+                    <div class="pfpWindowBarText">pfp !</div>
+                    <div class="pfpWindowBarElements">
+                        <button class="minimize" title="WARNING ! there is no taskbar."> - </button>
+                        <button class="maximize" title="whats the point with this."> &#9744</button>
+                        <button class="close" title="Close"> &#9746</button>
+                    </div>
+                </div>
+                <img class="pfp" src="/src/raven.jpg" alt="profilePic">
+            </div>
+        </div>
     </div>
 </body>
 </html>
