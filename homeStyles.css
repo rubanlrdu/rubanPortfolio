@@ -89,13 +89,16 @@ background-color: beige;
 .minimize:hover, .maximize:hover
 {
     background-color: white;
+    cursor: pointer;
 }
 .close:hover, .errorClose:hover{
     background-color: red;
+    cursor: pointer;
 }
 .getStarted:hover, .errorResponse:hover
 {
-    background-color: rgb(223, 223, 223);;
+    background-color: rgb(223, 223, 223);
+    cursor: pointer;
 }
 .welcomeBox:hover,.errorBox:hover{
     box-shadow: 0 0px 10px rgba(89, 89, 89, 0.596);
@@ -103,7 +106,7 @@ background-color: beige;
 
 /*ERROR BOX STYLES*/
 
-.errorBoxContainer
+.errorBoxContainer.active
 {
     position: absolute;
     top: 0;
@@ -163,11 +166,7 @@ background-color: beige;
     color:red;
 }
 .errorBoxContainer, .errorBoxContainer.inactive {
-    /* ...existing code... */
-    display: none; /* hide by default */
-}
-.errorBoxContainer.active {
-    display: flex; /* show when active */
+    display: none;
 }
 /* BG TEXT*/
 .bgTextSuper{

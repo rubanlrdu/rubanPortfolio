@@ -45,17 +45,23 @@ font-family: 'JetBrains Mono', sans-serif;
 }
 .aboutme:hover, .featured:hover, .contact:hover{
     background-color: rgb(188, 188, 188);
+    cursor: pointer;
 }
 /* ABOUT ME PAGE */
 
 .allAboutMe{
     display: flex;
     flex-direction: row;
-    gap:40px;
+    justify-content: center;
+}
+.allAboutMe.inactive{
+    display:none;
 }
 
 .aboutContainer{
     max-width:40%;
+    position:fixed;
+    transform:translateX(-250px);
     margin-left:50px;
     margin-top:150px;
     background-color: beige;
@@ -64,11 +70,16 @@ font-family: 'JetBrains Mono', sans-serif;
     border-radius: 5px;
     overflow:hidden;
 }
+.aboutContainer.inactive{
+    display:none;
+}
 .aboutText{
-    font-size:2rem;
+    font-size:1.8rem;
     margin-top:0px;
     margin-left:20px;
     margin-right:20px;
+    text-indent: 3em;
+    text-align: justify;
 }
 .aboutHelo{
     font-size:4rem;
@@ -99,12 +110,18 @@ font-family: 'JetBrains Mono', sans-serif;
 .minimize:hover, .maximize:hover
 {
     background-color: rgb(205, 205, 205);
+    cursor: pointer;
 }
 .close:hover{
     background-color: red;
+    cursor: pointer;
 }
 /*profile pic*/
-
+.pfpContainerSuper{
+    position:fixed;
+    display: flex;
+    transform: translateX(350px) translateY(50px);
+}
 .pfpContainer{
     display:flex;
     flex-direction: column;
@@ -116,23 +133,240 @@ font-family: 'JetBrains Mono', sans-serif;
     border-width: 2px;
     border-radius: 5px;
     overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+.pfpContainer.inactive{
+    display:none;
+}
+.pfpImageContainer{
+    width:350px;
+    height:350px;
+    overflow: hidden;
 }
 .pfp{
     object-fit: cover;
     width:350px;
     height:350px;
+    transition: transform 0.5s ease-in-out;
+
 }
 .pfpWindowBar{
     display:flex;
-    padding-top: 5px;
-    padding-bottom:5px;
+    padding-top: 2px;
+    padding-bottom:2px;
     padding-left:15px;
     padding-right:15px;
     justify-content: space-between;
     background-color: white;
-    height:35px;
+    height:30px;
     align-items: center;
     border-style:solid;
     border-width:0 0 2px 0;
     border-radius: 5px 5px 0 0;
+}
+.pfpContainer:hover{
+    box-shadow: 0 0px 10px rgba(89, 89, 89, 0.596);
+    transform: scale(1.01);
+}
+.pfp:hover{
+    transform: scale(1.05);
+}
+
+/*ICONS STYLES*/
+
+.iconsContainerSuper
+{
+    position:absolute;
+    display:flex;
+    justify-content: flex-end;
+    right: 0;
+    bottom: 80px;
+}
+.iconsContainer
+{
+    display:flex;
+    flex-direction: row;
+    margin-right:50px;
+    gap:20px;
+}
+.cameraIcon,.musicIcon,.photosIcon,.moviesIcon,.artIcon{
+    width: 60px;
+    height:70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+}
+.iconImage
+{
+    width:60px;
+    height:60px;
+    object-fit:cover;
+}
+.iconText{
+    margin-top: 0;
+    font-size: 0.8rem;
+}
+.cameraIcon:hover,.musicIcon:hover,.photosIcon:hover,.moviesIcon:hover,.artIcon:hover
+{
+    cursor: pointer;
+    transform: scale(1.04);
+}
+
+/*universal window*/
+
+.universalWindow
+{
+    background-color:beige;
+    border-style:solid;
+    border-width: 2px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.universalWindowSize{
+    width:400px;
+    height:500px;
+}
+.universalWindowBar
+{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    background-color: white;
+    height:35px;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    padding-left: 10px;
+    padding-right:10px;
+    flex-shrink: 0;
+}
+.universalMinimize,.universalMaximize,.universalClose{
+    border-style: none;
+    background-color: transparent;
+}
+.universalMinimize:hover,.universalMaximize:hover{
+    background-color: rgb(182, 182, 182);
+    cursor: pointer;
+}
+.universalClose:hover{
+    background-color: red;
+    cursor: pointer;
+}
+.universalWindowImageHolder{
+    width: 100%;
+    height:200px;
+    object-fit:cover;
+}
+
+/* featured content */
+
+.featuredContainer{
+    display: none;
+    position:absolute;
+    flex-direction:row;
+    justify-content: space-around;
+    padding:80px 0;
+    width: 100%;
+}
+.featuredContentText{
+    overflow-y: auto;
+    flex-grow: 1;
+    height: 200px;
+    padding: 0 10px 0 10px;
+}
+.featuredContentParagraph{
+    text-align: justify;
+    text-indent:2em;
+}
+.projectOneContentText{
+    overflow-y: auto;
+    flex-grow: 1;
+    height: 350px;
+    padding: 0 10px 0 10px;
+}
+
+.projectOne{
+    position: fixed;
+    transform: translateX(-450px);
+}
+.projectThree{
+    position: fixed;
+    transform: translateX(450px);
+}
+
+/*scrollbar mod*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: beige;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.emailWindowSize
+{
+    width:250px;
+    height: 300px;
+}
+.contactContentText
+{
+    padding:10px;
+}
+
+.contactContainer
+{
+    display:none;
+}
+.teleGram,.email,.linkedIn,.gitHub,.projectOne,.projectTwo,.projectThree{
+    display:none;
+}
+.teleGram.active,.gitHub.active,.linkedIn.active,.email.active,
+.projectOne.active,.projectTwo.active,.projectThree.active,.featuredContainer.active,
+.contactContainer.active
+{
+    display:flex;
+}
+.teleGram.active{
+    position: fixed;
+    transform: translateX(100px) translateY(200px);
+}
+.email.active{
+    position: fixed;
+    transform: translateX(-400px) translateY(0px);
+}
+.gitHub.active{
+    position: fixed;
+    transform: translateX(-100px) translateY(0px);
+}
+.linkedIn.active{
+    position: fixed;
+    transform: translateX(200px) translateY(0px);
+}
+.contactContainer.active
+{
+    position:absolute;
+    transform: translateX(100px) translateY(0px);
+    flex-direction: row;
+    justify-content:space-around;
+    width: 100%;
+    padding:80px 0;
 }

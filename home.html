@@ -35,19 +35,21 @@
             <div class="errorWindowBarElements">
                 <button class="minimize" title="WARNING ! there is no taskbar."> - </button>
                 <button class="maximize" title="there is no point with this."> &#9744</button>
-                <a class="errorClose" id="errorClose" title="Close" href=""> &#9746</a>
+                <button class="errorClose" id="errorClose" title="Close"> &#9746</button>
             </div>
             </div>
             <div class="errorContent" >
                 <h1 class="errorText">U cant close it</h1>
-                <a class="errorResponse" href="">Okay</a>
+                <button class="errorResponse" >Okay</button>
             </div>
         </div>
     </div>
 </body>
 <script>
+document.addEventListener('DOMContentLoaded', (event) => {
 document.querySelector('.close').onclick = function() {
     document.querySelector('.errorBoxContainer').classList.add('active');
+    document.querySelector('.errorBoxContainer').classList.remove('inactive');
 };
 document.querySelector(".errorResponse").onclick=function() {
     document.querySelector(".errorBoxContainer").classList.add('inactive');
@@ -55,5 +57,6 @@ document.querySelector(".errorResponse").onclick=function() {
 document.querySelector(".errorClose").onclick=function() {
     document.querySelector(".errorBoxContainer").classList.add('inactive');
 };
+});
 </script>
 </html>
