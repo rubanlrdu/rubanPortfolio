@@ -15,286 +15,325 @@
                 </div>
                 <div  class="navBarRightContainer">
                     <div class="navBarRight">
-                        <button class="aboutme" id="navBarButtons">about me</button>
-                        <button class="featured" id="navBarButtons">featured</button>
-                        <button class="contact" id="navBarButtons">contact</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="allAboutMe">
-            <div class="aboutContainer">
-                <div class="aboutmeWindowBar">
-                    <div class="aboutmeWindowBarText">about me !</div>
-                    <div class="aboutmeWindowBarElements">
-                        <button class="minimize" title="WARNING ! there is no taskbar."> - </button>
-                        <button class="maximize" title="whats the point with this."> &#9744</button>
-                        <button class="close" id="aboutClose"title="Close"> &#9746</button>
-                    </div>
-                </div>
-                <h1 class="aboutHelo">helo !</h1>
-                <p class="aboutText">i am a fresher from computer science background with a lot of enthusiasm in java full
-                    stack development. also i love to consume and create art. for your knowledge this whole
-                    project is written by me.
-                </p>
-            </div>
-            <div class="pfpContainerSuper">
-                <div class="pfpContainer">
-                    <div class="pfpWindowBar">
-                        <div class="pfpWindowBarText">pfp !</div>
-                        <div class="pfpWindowBarElements">
-                            <button class="minimize" title="WARNING ! there is no taskbar."> - </button>
-                            <button class="maximize" title="whats the point with this."> &#9744</button>
-                            <button class="close" id="pfpClose" title="Close"> &#9746</button>
+                        <div class="dropdown-container">
+                        <button class="aboutme aboutMeToggle" id="navBarButtons">about me</button>
+                        <div class="aboutMeMenu">
+                            <button class="whoAmIButton" id="dropDownButtons">who am i ?</button>
+                            <button class="pfpButton" id="dropDownButtons">my pfp</button>
                         </div>
-                    </div>
-                    <div class="pfpImageContainer">
-                        <img class="pfp" src="/src/raven.jpg" alt="profilePic">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="iconsContainerSuper">
-            <div class="iconsContainer">
-                <div class="cameraIcon">
-                    <div> <img class="iconImage" src="/src/raven.jpg" alt="camera"></div>
-                    <h1 class="iconText">camera</h1>
-                </div>
-                <div class="photosIcon">
-                    <div> <img class="iconImage" src="/src/raven.jpg" alt="photos"></div>
-                    <h1 class="iconText">photos</h1>
-                </div>
-                <div class="musicIcon">
-                    <div> <img class="iconImage" src="/src/raven.jpg" alt="music" ></div>
-                    <h1 class="iconText">music</h1>
-                </div>
-                <div class="moviesIcon">
-                    <div> <img class="iconImage" src="/src/raven.jpg" alt="movies" ></div>
-                    <h1 class="iconText">movies</h1>
-                </div>
-                <div class="artIcon">
-                    <div> <img class="iconImage" src="/src/raven.jpg" alt="art"></div>
-                    <h1 class="iconText">artProjects</h1>
-                </div>
-            </div>  
-        </div>
-        <div class="featuredContainer">
-            <div class="projectOne" id="projectOne">
-                <div class="universalWindowSize">
-                    <div class="universalWindow">
-                        <div class="universalWindowBar">
-                            <div class="universalWindowBarText">Cyan Vote</div>
-                                <div class="universalWindowBarElements">
-                                    <button class="universalMinimize" title="WARNING ! there is no taskbar."> - </button>
-                                    <button class="universalMaximize" title="whats the point with this."> &#9744</button>
-                                    <button class="universalClose" id="p1Close"  title="Close"> &#9746</button>
-                                </div>
                         </div>
-                        <div class="featuredContent">
-                            <div class="universalWindowImageHolder">
-                                <img class="universalWindowImageHolder" src="/src/raven.jpg" alt="projectOne">
-                            </div>
-                            <div class="projectOneContentText">
-                                <h1>
-                                    cyan vote.
-                                </h1>
-                                <p class="featuredContentParagraph" >
-                                    This project presents a practical exploration of blockchain
-                                    technology through the creation of a decentralized electronic voting system.
-                                    Focusing on a manageable scope, the system provides a platform for single-
-                                    choice voting using Solidity smart contracts on a local Ethereum network. The
-                                    project emphasizes learning core blockchain concepts such as smart contract
-                                    development, distributed data storage, and web integration. The resulting
-                                    application showcases voter registration, vote casting, and transparent result
-                                    display. The development process highlights the challenges and opportunities in 
-                                    applying blockchain to real-world applications.
-                                </p>
-                            </div>
+                        <div class="dropdown-container">
+                        <button class="featured featuredToggle" id="navBarButtons">featured</button>
+                        <div class="aboutMeMenu">
+                            <button class="projectOneButton" id="dropDownButtons">cyan Vote</button>
+                            <button class="projectTwoButton" id="dropDownButtons">foodApp</button>
+                            <button class="projectThreeButton" id="dropDownButtons">portfolio</button>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="projectTwo" id="projectTwo">
-                <div class="universalWindowSize">
-                    <div class="universalWindow">
-                        <div class="universalWindowBar">
-                            <div class="universalWindowBarText">Cyan Vote</div>
-                                <div class="universalWindowBarElements">
-                                    <button class="universalMinimize" title="WARNING ! there is no taskbar."> - </button>
-                                    <button class="universalMaximize" title="whats the point with this."> &#9744</button>
-                                    <button class="universalClose" id="p2Close" title="Close"> &#9746</button>
-                                </div>
                         </div>
-                        <div class="featuredContent">
-                            <div class="universalWindowImageHolder">
-                                <img class="universalWindowImageHolder" src="/src/raven.jpg" alt="projectTwo">
-                            </div>
-                            <div class="featuredContentText">
-                                <h1>
-                                    project 2.
-                                </h1>
-                                <p class="featuredContentParagraph">
-                                    This project presents a practical exploration of blockchain
-                                    technology through the creation of a decentralized electronic voting system.
-                                    Focusing on a manageable scope, the system provides a platform for single-
-                                    choice voting using Solidity smart contracts on a local Ethereum network. The
-                                    project emphasizes learning core blockchain concepts such as smart contract
-                                    development, distributed data storage, and web integration. The resulting
-                                    application showcases voter registration, vote casting, and transparent result
-                                    display. The development process highlights the challenges and opportunities in 
-                                    applying blockchain to real-world applications.
-                                </p>
-                            </div>
+                        <div class="dropdown-container">
+                        <button class="contact contactToggle" id="navBarButtons">contact</button>
+                        <div class="aboutMeMenu">
+                            <button class="emailButton" id="dropDownButtons">email</button>
+                            <button class="gitHubButton" id="dropDownButtons">github</button>
+                            <button class="linkedInButton" id="dropDownButtons">linkedIn</button>
+                            <button class="telegramButton" id="dropDownButtons">telegram</button>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="projectThree" id="projectThree">
-                <div class="universalWindowSize">
-                    <div class="universalWindow">
-                        <div class="universalWindowBar">
-                            <div class="universalWindowBarText">Cyan Vote</div>
-                                <div class="universalWindowBarElements">
-                                    <button class="universalMinimize" title="WARNING ! there is no taskbar."> - </button>
-                                    <button class="universalMaximize" title="whats the point with this."> &#9744</button>
-                                    <button class="universalClose" id="p3Close" title="Close"> &#9746</button>
-                                </div>
-                        </div>
-                        <div class="featuredContent">
-                            <div class="universalWindowImageHolder">
-                                <img class="universalWindowImageHolder" src="/src/raven.jpg" alt="projectThree">
-                            </div>
-                            <div class="featuredContentText">
-                                <h1>
-                                    project 3.
-                                </h1>
-                                <p class="featuredContentParagraph">
-                                    This project presents a practical exploration of blockchain
-                                    technology through the creation of a decentralized electronic voting system.
-                                    Focusing on a manageable scope, the system provides a platform for single-
-                                    choice voting using Solidity smart contracts on a local Ethereum network. The
-                                    project emphasizes learning core blockchain concepts such as smart contract
-                                    development, distributed data storage, and web integration. The resulting
-                                    application showcases voter registration, vote casting, and transparent result
-                                    display. The development process highlights the challenges and opportunities in 
-                                    applying blockchain to real-world applications.
-                                </p>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="contactContainerSuper">
-            <div class="contactContainer">
-                <div class="email" id="contactId">
-                    <div class="emailWindowSize">
+        <div class="superClass">
+            <div class="allAboutMe">
+                <div class="aboutContainer">
+                    <div class="aboutmeWindowBar">
+                        <div class="aboutmeWindowBarText">who am i ?</div>
+                        <div class="aboutmeWindowBarElements">
+                            <button class="minimize meClose" title="WARNING ! there is no taskbar."> - </button>
+                            <button class="maximize max" title="whats the point with this."> &#9744</button>
+                            <button class="close meClose" id="aboutClose"title="Close"> &#9746</button>
+                        </div>
+                    </div>
+                    <h1 class="aboutHelo">helo !</h1>
+                    <p class="aboutText">i am a fresher from computer science background with a lot of enthusiasm in java full
+                        stack development. also i love to consume and create art. for your knowledge this whole
+                        project is written by me.
+                    </p>
+                </div>
+                <div class="pfpContainerSuper">
+                    <div class="pfpContainer">
+                        <div class="pfpWindowBar">
+                            <div class="pfpWindowBarText">pfp !</div>
+                            <div class="pfpWindowBarElements">
+                                <button class="minimize pfpClose" id="pfpClose" title="WARNING ! there is no taskbar."> - </button>
+                                <button class="maximize max" title="whats the point with this."> &#9744</button>
+                                <button class="close pfpClose" id="pfpClose" title="Close"> &#9746</button>
+                            </div>
+                        </div>
+                        <div class="pfpImageContainer">
+                            <img class="pfp" src="src/raven.jpg" alt="profilePic">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="iconsContainerSuper">
+                <div class="iconsContainer">
+                    <div class="cameraIcon">
+                        <div> <img class="iconImage" src="src/raven.jpg" alt="camera"></div>
+                        <h1 class="iconText">camera</h1>
+                    </div>
+                    <div class="photosIcon">
+                        <div> <img class="iconImage" src="src/raven.jpg" alt="photos"></div>
+                        <h1 class="iconText">photos</h1>
+                    </div>
+                    <div class="musicIcon">
+                        <div> <img class="iconImage" src="src/raven.jpg" alt="music" ></div>
+                        <h1 class="iconText">music</h1>
+                    </div>
+                    <div class="moviesIcon">
+                        <div> <img class="iconImage" src="src/raven.jpg" alt="movies" ></div>
+                        <h1 class="iconText">movies</h1>
+                    </div>
+                    <div class="artIcon">
+                        <div> <img class="iconImage" src="src/raven.jpg" alt="art"></div>
+                        <h1 class="iconText">artProjects</h1>
+                    </div>
+                </div>  
+            </div>
+            <div class="featuredContainer">
+                <div class="projectOne" id="projectOne">
+                    <div class="universalWindowSize">
                         <div class="universalWindow">
                             <div class="universalWindowBar">
-                                <div class="universalWindowBarText">my email.</div>
+                                <div class="universalWindowBarText">Cyan Vote</div>
                                     <div class="universalWindowBarElements">
-                                        <button class="universalMinimize" title="WARNING ! there is no taskbar."> - </button>
-                                        <button class="universalMaximize" title="whats the point with this."> &#9744</button>
-                                        <button class="universalClose" id="emailClose" title="Close"> &#9746</button>
+                                        <button class="universalMinimize p1Close" title="WARNING ! there is no taskbar."> - </button>
+                                        <button class="universalMaximize max" title="whats the point with this."> &#9744</button>
+                                        <button class="universalClose p1Close" id="p1Close"  title="Close"> &#9746</button>
                                     </div>
                             </div>
-                            <div class="contactContent">
-                                <!--<div class="universalWindowImageHolder">
-                                    <img class="universalWindowImageHolder" src="/src/raven.jpg" alt="email">
-                                </div> -->
-                                <div class="contactContentText">
-                                    <h1 id="contactField">
-                                        raven<br>star0104<br>@gmail.com
+                            <div class="featuredContent">
+                                <div class="universalWindowImageHolder">
+                                    <img class="universalWindowImageHolder" src="src/raven.jpg" alt="projectOne">
+                                </div>
+                                <div class="projectOneContentText">
+                                    <h1>
+                                        cyan vote.
                                     </h1>
-                                    <div class="contactButton">
-                                        <button onclick="copyFunction()">Copy MailID</button>
-                                    </div>
+                                    <p class="featuredContentParagraph" >
+                                        This project presents a practical exploration of blockchain
+                                        technology through the creation of a decentralized electronic voting system.
+                                        Focusing on a manageable scope, the system provides a platform for single-
+                                        choice voting using Solidity smart contracts on a local Ethereum network. The
+                                        project emphasizes learning core blockchain concepts such as smart contract
+                                        development, distributed data storage, and web integration. The resulting
+                                        application showcases voter registration, vote casting, and transparent result
+                                        display. The development process highlights the challenges and opportunities in 
+                                        applying blockchain to real-world applications.
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
-                <div class="linkedIn" id="contactId">
-                    <div class="emailWindowSize">
+                <div class="projectTwo" id="projectTwo">
+                    <div class="universalWindowSize">
                         <div class="universalWindow">
                             <div class="universalWindowBar">
-                                <div class="universalWindowBarText">linkedIn.</div>
+                                <div class="universalWindowBarText">Cyan Vote</div>
                                     <div class="universalWindowBarElements">
-                                        <button class="universalMinimize" title="WARNING ! there is no taskbar."> - </button>
-                                        <button class="universalMaximize" title="whats the point with this."> &#9744</button>
-                                        <button class="universalClose" id="linkedInClose"title="Close"> &#9746</button>
+                                        <button class="universalMinimize p2Close" title="WARNING ! there is no taskbar."> - </button>
+                                        <button class="universalMaximize max" title="whats the point with this."> &#9744</button>
+                                        <button class="universalClose p2Close" id="p2Close" title="Close"> &#9746</button>
                                     </div>
                             </div>
-                            <div class="contactContent">
-                                <!--<div class="universalWindowImageHolder">
-                                    <img class="universalWindowImageHolder" src="/src/raven.jpg" alt="email">
-                                </div> -->
-                                <div class="contactContentText">
-                                    <h1 id="contactField">
-                                        linkedIN
+                            <div class="featuredContent">
+                                <div class="universalWindowImageHolder">
+                                    <img class="universalWindowImageHolder" src="src/raven.jpg" alt="projectTwo">
+                                </div>
+                                <div class="featuredContentText">
+                                    <h1>
+                                        project 2.
                                     </h1>
-                                    <div class="contactButton">
-                                        <a href="https://in.linkedin.com/" target="_blank">Open</a>
-                                    </div>
+                                    <p class="featuredContentParagraph">
+                                        This project presents a practical exploration of blockchain
+                                        technology through the creation of a decentralized electronic voting system.
+                                        Focusing on a manageable scope, the system provides a platform for single-
+                                        choice voting using Solidity smart contracts on a local Ethereum network. The
+                                        project emphasizes learning core blockchain concepts such as smart contract
+                                        development, distributed data storage, and web integration. The resulting
+                                        application showcases voter registration, vote casting, and transparent result
+                                        display. The development process highlights the challenges and opportunities in 
+                                        applying blockchain to real-world applications.
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
-                <div class="gitHub" id="contactId">
-                    <div class="emailWindowSize">
+                <div class="projectThree" id="projectThree">
+                    <div class="universalWindowSize">
                         <div class="universalWindow">
                             <div class="universalWindowBar">
-                                <div class="universalWindowBarText">gitHub.</div>
+                                <div class="universalWindowBarText">Cyan Vote</div>
                                     <div class="universalWindowBarElements">
-                                        <button class="universalMinimize" title="WARNING ! there is no taskbar."> - </button>
-                                        <button class="universalMaximize" title="whats the point with this."> &#9744</button>
-                                        <button class="universalClose" id="gitHubClose" title="Close"> &#9746</button>
+                                        <button class="universalMinimize p3Close" title="WARNING ! there is no taskbar."> - </button>
+                                        <button class="universalMaximize max" title="whats the point with this."> &#9744</button>
+                                        <button class="universalClose p3Close" id="p3Close" title="Close"> &#9746</button>
                                     </div>
                             </div>
-                            <div class="contactContent">
-                                <!--<div class="universalWindowImageHolder">
-                                    <img class="universalWindowImageHolder" src="/src/raven.jpg" alt="email">
-                                </div> -->
-                                <div class="contactContentText">
-                                    <h1 id="contactField">
-                                        gitHub
+                            <div class="featuredContent">
+                                <div class="universalWindowImageHolder">
+                                    <img class="universalWindowImageHolder" src="src/raven.jpg" alt="projectThree">
+                                </div>
+                                <div class="featuredContentText">
+                                    <h1>
+                                        project 3.
                                     </h1>
-                                    <div class="contactButton">
-                                        <a href="https://github.com/rubanlrdu" target="_blank">Open</a>
-                                    </div>
+                                    <p class="featuredContentParagraph">
+                                        This project presents a practical exploration of blockchain
+                                        technology through the creation of a decentralized electronic voting system.
+                                        Focusing on a manageable scope, the system provides a platform for single-
+                                        choice voting using Solidity smart contracts on a local Ethereum network. The
+                                        project emphasizes learning core blockchain concepts such as smart contract
+                                        development, distributed data storage, and web integration. The resulting
+                                        application showcases voter registration, vote casting, and transparent result
+                                        display. The development process highlights the challenges and opportunities in 
+                                        applying blockchain to real-world applications.
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
-                <div class="teleGram" id="contactId">
-                    <div class="emailWindowSize">
-                        <div class="universalWindow">
-                            <div class="universalWindowBar">
-                                <div class="universalWindowBarText">telegram.</div>
-                                    <div class="universalWindowBarElements">
-                                        <button class="universalMinimize" title="WARNING ! there is no taskbar."> - </button>
-                                        <button class="universalMaximize" title="whats the point with this."> &#9744</button>
-                                        <button class="universalClose" id="telegramClose" title="Close"> &#9746</button>
-                                    </div>
-                            </div>
-                            <div class="contactContent">
-                                <!--<div class="universalWindowImageHolder">
-                                    <img class="universalWindowImageHolder" src="/src/raven.jpg" alt="email">
-                                </div> -->
-                                <div class="contactContentText">
-                                    <h1 id="contactField">
-                                        telegram
-                                    </h1>
-                                    <div class="contactButton">
-                                        <a href="https://t.me/ruban_lourdu" target="_blank">Open</a>
+            </div>
+            <div class="contactContainerSuper">
+                <div class="contactContainer">
+                    <div class="email" id="contactId">
+                        <div class="emailWindowSize">
+                            <div class="universalWindow">
+                                <div class="universalWindowBar">
+                                    <div class="universalWindowBarText">my email.</div>
+                                        <div class="universalWindowBarElements">
+                                            <button class="universalMinimize emailClose" title="WARNING ! there is no taskbar."> - </button>
+                                            <button class="universalMaximize max" title="whats the point with this."> &#9744</button>
+                                            <button class="universalClose emailClose" id="emailClose" title="Close"> &#9746</button>
+                                        </div>
+                                </div>
+                                <div class="contactContent">
+                                    <!--<div class="universalWindowImageHolder">
+                                        <img class="universalWindowImageHolder" src="/src/raven.jpg" alt="email">
+                                    </div> -->
+                                    <div class="contactContentText">
+                                        <h1 id="contactField">
+                                            raven<br>star0104<br>@gmail.com
+                                        </h1>
+                                        <div class="contactButton">
+                                            <button onclick="copyFunction()">Copy MailID</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div> 
+                        </div> 
+                    </div>
+                    <div class="linkedIn" id="contactId">
+                        <div class="emailWindowSize">
+                            <div class="universalWindow">
+                                <div class="universalWindowBar">
+                                    <div class="universalWindowBarText">linkedIn.</div>
+                                        <div class="universalWindowBarElements">
+                                            <button class="universalMinimize linkedInClose" title="WARNING ! there is no taskbar."> - </button>
+                                            <button class="universalMaximize max" title="whats the point with this."> &#9744</button>
+                                            <button class="universalClose linkedInClose" id="linkedInClose"title="Close"> &#9746</button>
+                                        </div>
+                                </div>
+                                <div class="contactContent">
+                                    <!--<div class="universalWindowImageHolder">
+                                        <img class="universalWindowImageHolder" src="/src/raven.jpg" alt="email">
+                                    </div> -->
+                                    <div class="contactContentText">
+                                        <h1 id="contactField">
+                                            linkedIN
+                                        </h1>
+                                        <div class="contactButton">
+                                            <a href="https://in.linkedin.com/" target="_blank">Open</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="gitHub" id="contactId">
+                        <div class="emailWindowSize">
+                            <div class="universalWindow">
+                                <div class="universalWindowBar">
+                                    <div class="universalWindowBarText">gitHub.</div>
+                                        <div class="universalWindowBarElements">
+                                            <button class="universalMinimize gitClose" title="WARNING ! there is no taskbar."> - </button>
+                                            <button class="universalMaximize max" title="whats the point with this."> &#9744</button>
+                                            <button class="universalClose gitClose" id="gitHubClose" title="Close"> &#9746</button>
+                                        </div>
+                                </div>
+                                <div class="contactContent">
+                                    <!--<div class="universalWindowImageHolder">
+                                        <img class="universalWindowImageHolder" src="/src/raven.jpg" alt="email">
+                                    </div> -->
+                                    <div class="contactContentText">
+                                        <h1 id="contactField">
+                                            gitHub
+                                        </h1>
+                                        <div class="contactButton">
+                                            <a href="https://github.com/rubanlrdu" target="_blank">Open</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="teleGram" id="contactId">
+                        <div class="emailWindowSize">
+                            <div class="universalWindow">
+                                <div class="universalWindowBar">
+                                    <div class="universalWindowBarText">telegram.</div>
+                                        <div class="universalWindowBarElements">
+                                            <button class="universalMinimize teleGramClose" title="WARNING ! there is no taskbar."> - </button>
+                                            <button class="universalMaximize max" title="whats the point with this."> &#9744</button>
+                                            <button class="universalClose teleGramClose" id="telegramClose" title="Close"> &#9746</button>
+                                        </div>
+                                </div>
+                                <div class="contactContent">
+                                    <!--<div class="universalWindowImageHolder">
+                                        <img class="universalWindowImageHolder" src="/src/raven.jpg" alt="email">
+                                    </div> -->
+                                    <div class="contactContentText">
+                                        <h1 id="contactField">
+                                            telegram
+                                        </h1>
+                                        <div class="contactButton">
+                                            <a href="https://t.me/ruban_lourdu" target="_blank">Open</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
                 </div>
+            </div>
+            <div class="catContainer">
+                <div class="catWindowSize">
+                            <div class="universalWindow" id="catWindow">
+                                <div class="universalWindowBar">
+                                    <div class="universalWindowBarText">lovelyCats.</div>
+                                        <div class="universalWindowBarElements">
+                                            <button class="universalMinimize catClose" title="WARNING ! there is no taskbar."> - </button>
+                                            <button class="universalClose catClose" id="catClose" title="Close"> &#9746</button>
+                                        </div>
+                                </div>
+                                <div class="randomCatsPlaceHolder">
+                                    <img id="randomCats" src="" alt="randomCatImages">
+                                </div>
+                            </div>
+                        </div>
             </div>
         </div>
     </div>
@@ -310,6 +349,9 @@ document.querySelector(".aboutme").onclick=function(){
     document.querySelector(".allAboutMe").classList.remove('inactive');
     document.querySelector(".aboutContainer").classList.remove('inactive');
     document.querySelector(".pfpContainer").classList.remove('inactive');
+
+    document.querySelector(".projectThree").classList.remove('noTranslate'); /*addback translate*/
+    document.querySelector(".projectOne").classList.remove('noTranslate'); /*addback translate*/
     
     document.querySelector(".projectOne").classList.remove('active');
     document.querySelector(".projectTwo").classList.remove('active');
@@ -320,8 +362,7 @@ document.querySelector(".aboutme").onclick=function(){
     document.querySelector(".linkedIn").classList.remove('active');
     document.querySelector(".gitHub").classList.remove('active');
     document.querySelector(".email").classList.remove('active');
-    document.querySelector(".contactContainer").classList.remove('active');
-    
+    document.querySelector(".contactContainer").classList.remove('active');  
 }
 document.querySelector(".contact").onclick=function()
 {
@@ -333,9 +374,7 @@ document.querySelector(".contact").onclick=function()
 
     document.querySelector(".allAboutMe").classList.add('inactive');
 
-    document.querySelector(".projectOne").classList.remove('active');
-    document.querySelector(".projectTwo").classList.remove('active');
-    document.querySelector(".projectThree").classList.remove('active');
+    document.querySelector(".featuredContainer").classList.remove('active');
 }
 document.querySelector(".featured").onclick=function()
 {
@@ -343,6 +382,10 @@ document.querySelector(".featured").onclick=function()
     document.querySelector(".projectTwo").classList.add('active');
     document.querySelector(".projectThree").classList.add('active');
     document.querySelector(".featuredContainer").classList.add('active');
+
+    document.querySelector(".projectOne").classList.remove('noTranslate'); /*addback translate*/
+    document.querySelector(".projectTwo").classList.remove('noTranslate'); /*addback translate*/
+    document.querySelector(".projectThree").classList.remove('noTranslate'); /*addback translate*/
 
     document.querySelector(".allAboutMe").classList.add('inactive');
 
@@ -352,41 +395,213 @@ document.querySelector(".featured").onclick=function()
     document.querySelector(".email").classList.remove('active');
     document.querySelector(".contactContainer").classList.remove('active');
 }
-document.querySelector('#telegramClose').onclick=function()
-{
+
+/*individual close buttons*/
+const teleGramClose = document.querySelectorAll('.teleGramClose');
+function teleGramButton(event){
     document.querySelector(".teleGram").classList.remove('active');
 }
-document.querySelector('#emailClose').onclick=function()
-{
-    document.querySelector(".email").classList.remove('active');
-}
-document.querySelector('#linkedInClose').onclick=function()
-{
+teleGramClose.forEach(singleButton => {
+    singleButton.addEventListener('click',teleGramButton);
+});
+
+const linkedInClose = document.querySelectorAll('.linkedInClose');
+function linkedInButton(event){
     document.querySelector(".linkedIn").classList.remove('active');
 }
-document.querySelector('#gitHubClose').onclick=function()
-{
+linkedInClose.forEach(singleButton => {
+    singleButton.addEventListener('click',linkedInButton);
+});
+
+const emailClose = document.querySelectorAll('.emailClose');
+function emailButton(event){
+    document.querySelector(".email").classList.remove('active');
+}
+emailClose.forEach(singleButton => {
+    singleButton.addEventListener('click',emailButton);
+});
+
+const gitClose = document.querySelectorAll('.gitClose');
+function gitButton(event){
     document.querySelector(".gitHub").classList.remove('active');
 }
-document.querySelector('#p1Close').onclick=function()
-{
+gitClose.forEach(singleButton => {
+    singleButton.addEventListener('click',gitButton);
+});
+
+const p1Close = document.querySelectorAll('.p1Close');
+function p1Button(event){
     document.querySelector(".projectOne").classList.remove('active');
 }
-document.querySelector('#p2Close').onclick=function()
-{
+p1Close.forEach(singleButton => {
+    singleButton.addEventListener('click',p1Button);
+});
+
+const p2Close = document.querySelectorAll('.p2Close');
+function p2Button(event){
     document.querySelector(".projectTwo").classList.remove('active');
 }
-document.querySelector('#p3Close').onclick=function()
-{
+p2Close.forEach(singleButton => {
+    singleButton.addEventListener('click',p2Button);
+});
+
+const p3Close = document.querySelectorAll('.p3Close');
+function p3Button(event){
     document.querySelector(".projectThree").classList.remove('active');
 }
-document.querySelector('#aboutClose').onclick=function()
-{
+p3Close.forEach(singleButton => {
+    singleButton.addEventListener('click',p3Button);
+});
+
+const meClose = document.querySelectorAll('.meClose');
+function meButton(event){
     document.querySelector(".aboutContainer").classList.add('inactive');
 }
-document.querySelector('#pfpClose').onclick=function()
-{
+meClose.forEach(singleButton => {
+    singleButton.addEventListener('click',meButton);
+});
+
+const pfpClose = document.querySelectorAll('.pfpClose');
+function pfpButton(event){
     document.querySelector(".pfpContainer").classList.add('inactive');
 }
+pfpClose.forEach(singleButton => {
+    singleButton.addEventListener('click',pfpButton);
+});
+
+const catClose = document.querySelectorAll('.catClose');
+function catButton(event){
+    document.querySelector(".catContainer").classList.add('inactive');
+}
+catClose.forEach(singleButton => {
+    singleButton.addEventListener('click',catButton);
+});
+
+/*navBar buttons*/
+/*whoAmI Button*/
+document.querySelector(".whoAmIButton").onclick=function(){
+    document.querySelector(".aboutContainer").classList.remove('inactive');
+    document.querySelector(".allAboutMe").classList.remove('inactive');
+    document.querySelector(".pfpContainer").classList.add('inactive');
+
+    document.querySelector(".featuredContainer").classList.remove('active');
+    
+    document.querySelector(".contactContainer").classList.remove('active');
+}
+/*pfp Button*/
+document.querySelector(".pfpButton").onclick=function(){
+    document.querySelector(".allAboutMe").classList.remove('inactive');
+    document.querySelector(".pfpContainer").classList.remove('inactive');
+    document.querySelector(".aboutContainer").classList.add('inactive');
+
+    document.querySelector(".featuredContainer").classList.remove('active');
+
+    document.querySelector(".contactContainer").classList.remove('active');
+}
+
+/*project1 button*/
+document.querySelector(".projectOneButton").onclick=function(){
+    document.querySelector(".projectOne").classList.add('active');
+    document.querySelector(".featuredContainer").classList.add('active');
+    document.querySelector(".projectTwo").classList.remove('active');
+    document.querySelector(".projectThree").classList.remove('active');
+
+    document.querySelector(".projectOne").classList.add('noTranslate'); /*remove translate*/
+
+    document.querySelector(".contactContainer").classList.remove('active');
+    document.querySelector(".allAboutMe").classList.add('inactive');
+
+}
+/*project2 button*/
+document.querySelector(".projectTwoButton").onclick=function(){
+    document.querySelector(".projectTwo").classList.add('active');
+    document.querySelector(".featuredContainer").classList.add('active');
+    document.querySelector(".projectOne").classList.remove('active');
+    document.querySelector(".projectThree").classList.remove('active');
+
+    document.querySelector(".projectTwo").classList.add('noTranslate'); /*remove translate*/
+
+    document.querySelector(".contactContainer").classList.remove('active');
+    document.querySelector(".allAboutMe").classList.add('inactive');
+}
+/*project2 button*/
+document.querySelector(".projectThreeButton").onclick=function(){
+    document.querySelector(".projectThree").classList.add('active');
+    document.querySelector(".featuredContainer").classList.add('active');
+    document.querySelector(".projectTwo").classList.remove('active');
+    document.querySelector(".projectOne").classList.remove('active');
+
+    document.querySelector(".projectThree").classList.add('noTranslate'); /*remove translate*/
+
+    document.querySelector(".contactContainer").classList.remove('active');
+    document.querySelector(".allAboutMe").classList.add('inactive');
+}
+/*email Button*/
+document.querySelector(".emailButton").onclick=function(){
+    document.querySelector(".contactContainer").classList.add('active');
+    document.querySelector(".teleGram").classList.remove('active');
+    document.querySelector(".linkedIn").classList.remove('active');
+    document.querySelector(".gitHub").classList.remove('active');
+    document.querySelector(".email").classList.add('active');
+    document.querySelector(".featuredContainer").classList.remove('active');
+    document.querySelector(".allAboutMe").classList.add('inactive');
+
+}
+/*gitHub Button*/
+document.querySelector(".gitHubButton").onclick=function(){
+    document.querySelector(".contactContainer").classList.add('active');
+    document.querySelector(".teleGram").classList.remove('active');
+    document.querySelector(".linkedIn").classList.remove('active');
+    document.querySelector(".gitHub").classList.add('active');
+    document.querySelector(".email").classList.remove('active');
+    document.querySelector(".featuredContainer").classList.remove('active');
+    document.querySelector(".allAboutMe").classList.add('inactive');
+
+}
+/*linkedIn Button*/
+document.querySelector(".linkedInButton").onclick=function(){
+    document.querySelector(".contactContainer").classList.add('active');
+    document.querySelector(".teleGram").classList.remove('active');
+    document.querySelector(".linkedIn").classList.add('active');
+    document.querySelector(".gitHub").classList.remove('active');
+    document.querySelector(".email").classList.remove('active');
+    document.querySelector(".featuredContainer").classList.remove('active');
+    document.querySelector(".allAboutMe").classList.add('inactive');
+
+
+}
+/*telegram Button*/
+document.querySelector(".telegramButton").onclick=function(){
+    document.querySelector(".contactContainer").classList.add('active');
+    document.querySelector(".teleGram").classList.add('active');
+    document.querySelector(".linkedIn").classList.remove('active');
+    document.querySelector(".gitHub").classList.remove('active');
+    document.querySelector(".email").classList.remove('active');
+    document.querySelector(".featuredContainer").classList.remove('active');
+    document.querySelector(".allAboutMe").classList.add('inactive');
+}
+/*randowm cats*/
+window.onload = function() {
+    document.querySelector(".catContainer").classList.add('inactive');
+}
+const catOpen = document.querySelectorAll('.max');
+function catOpenButton(event){
+    const catImages= [
+    'https://images.unsplash.com/photo-1618826411640-d6df44dd3f7a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'https://images.unsplash.com/photo-1519052537078-e6302a4968d4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'https://images.unsplash.com/photo-1529778873920-4da4926a72c2?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'https://images.unsplash.com/photo-1494256997604-768d1f608cac?q=80&w=1829&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'https://images.unsplash.com/photo-1637929955294-bb4d829285ef?q=80&w=1828&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'https://images.unsplash.com/photo-1597237154674-1a0d2274cef4?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'https://images.unsplash.com/photo-1542665093852-744c79500d45?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+];
+    const randomIndex = Math.floor(Math.random() * catImages.length);
+    const imgElement = document.getElementById('randomCats');
+    imgElement.src = catImages[randomIndex];
+    document.querySelector(".catContainer").classList.remove('inactive');
+}
+catOpen.forEach(singleButton => {
+    singleButton.addEventListener('click',catOpenButton);
+});
 </script>
 </html>

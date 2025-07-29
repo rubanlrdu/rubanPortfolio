@@ -2,20 +2,32 @@
 *{
 font-family: 'JetBrains Mono', sans-serif;
 }
+.superClass{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-top: 110px;
+    overflow: hidden;
+}
 .navBarContainer{
     display:flex;
     justify-content: center;
     margin-top:30px;
+    z-index: 2000;
+    position: absolute;
+    width: 100%;
 }
 .navBar{
     display:flex;
     flex-direction: row;
     background-color: rgb(255, 255, 255);
     width: 1200px;
+    height: 90px;
     justify-content: space-between;
     border-style:solid;
     border-width:2px;
     border-radius:5px;
+    
 }
 .navBarRightContainer{
     display: flex;
@@ -36,6 +48,46 @@ font-family: 'JetBrains Mono', sans-serif;
     border-style: solid;
     border-width:0 0 0 2px;
     background-color: beige;
+    height:90px;
+}
+#dropDownButtons{
+    border-style:solid;
+    border-radius:5px;
+    background-color: beige;
+    padding:17px;
+
+}
+#dropDownButtons:hover{
+    cursor: pointer;
+    background-color: white;
+
+}
+.aboutMeMenu{
+    display:none;
+    position:absolute;
+    flex-direction: column;
+    justify-content: center;
+    background-color:transparent;
+    z-index: 1;
+    border-radius: 5px;
+    padding-top:10px;
+    transform: translateY(90px);
+    gap:10px;
+}
+#dropDownButtons
+{
+    transition: box-shadow 0.3s ease;
+}
+#dropDownButtons:hover{
+    box-shadow: 0 0px 10px rgba(89, 89, 89, 0.596);
+}
+.dropdown-container{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.dropdown-container:hover  .aboutMeMenu {
+    display: flex;
 }
 .contact{
     border-radius: 0 5px 5px 0;
@@ -44,7 +96,7 @@ font-family: 'JetBrains Mono', sans-serif;
     margin-left:15px;
 }
 .aboutme:hover, .featured:hover, .contact:hover{
-    background-color: rgb(188, 188, 188);
+    background-color: rgba(188, 188, 188, 0);
     cursor: pointer;
 }
 /* ABOUT ME PAGE */
@@ -53,6 +105,7 @@ font-family: 'JetBrains Mono', sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    z-index: 1;
 }
 .allAboutMe.inactive{
     display:none;
@@ -69,6 +122,11 @@ font-family: 'JetBrains Mono', sans-serif;
     border-width:2px;
     border-radius: 5px;
     overflow:hidden;
+    transition: transform 0.5s ease-in-out;
+}
+.aboutContainer:hover{
+    box-shadow: 0 0px 10px rgba(89, 89, 89, 0.596);
+    transform: scale(1.01) translateX(-250px);
 }
 .aboutContainer.inactive{
     display:none;
@@ -224,7 +282,12 @@ font-family: 'JetBrains Mono', sans-serif;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.universalWindow:hover{
+    box-shadow: 0 0px 10px rgba(89, 89, 89, 0.596);
+    transform: scale(1.01);
 }
 .universalWindowSize{
     width:400px;
@@ -273,6 +336,7 @@ font-family: 'JetBrains Mono', sans-serif;
     justify-content: space-around;
     padding:80px 0;
     width: 100%;
+    z-index: 1;
 }
 .featuredContentText{
     overflow-y: auto;
@@ -294,6 +358,9 @@ font-family: 'JetBrains Mono', sans-serif;
 .projectOne{
     position: fixed;
     transform: translateX(-450px);
+}
+.projectOne.noTranslate,.projectTwo.noTranslate,.projectThree.noTranslate,.teleGram.noTranslate,.linkedIn.noTranslate,.giHub.noTranslate,.email.noTranslate{
+    transform: translateX(0px) translateY(0px) scale(1.2);
 }
 .projectThree{
     position: fixed;
@@ -326,6 +393,7 @@ font-family: 'JetBrains Mono', sans-serif;
 {
     width:250px;
     height: 300px;
+    z-index: 1;
 }
 .contactContentText
 {
@@ -335,6 +403,7 @@ font-family: 'JetBrains Mono', sans-serif;
 .contactContainer
 {
     display:none;
+    height: auto;
 }
 .teleGram,.email,.linkedIn,.gitHub,.projectOne,.projectTwo,.projectThree{
     display:none;
@@ -369,4 +438,39 @@ font-family: 'JetBrains Mono', sans-serif;
     justify-content:space-around;
     width: 100%;
     padding:80px 0;
+}
+#randomCats
+{
+    width: 100%;
+    height:100%;
+    object-fit:cover;
+}
+#catWindow{
+    width:400px;
+    height: 280px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 200;
+    margin:0;
+    padding:0;
+}
+.catWindowSize{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.randomCatsPlaceHolder{
+    margin:0;
+    padding:0;
+    height: auto;
+}
+.catContainer{
+    width:100%;
+    height:600px;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+}
+.catContainer.inactive{
+    display:none;
 }
