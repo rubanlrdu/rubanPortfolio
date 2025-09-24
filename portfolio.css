@@ -112,7 +112,7 @@ font-family: 'JetBrains Mono', sans-serif;
 }
 
 .aboutContainer{
-    max-width:40%;
+    max-width:550px;
     position:fixed;
     transform:translateX(-250px);
     margin-left:50px;
@@ -234,25 +234,34 @@ font-family: 'JetBrains Mono', sans-serif;
 
 .iconsContainerSuper
 {
-    position:absolute;
+    position:fixed;
     display:flex;
     justify-content: flex-end;
     right: 0;
     bottom: 80px;
+    margin-right:50px;
+    
 }
 .iconsContainer
 {
+    background-color: beige;
+    border-style: solid;
+    border-width:2px;
+    border-radius: 5px;
     display:flex;
     flex-direction: row;
-    margin-right:50px;
     gap:20px;
+    height: 100px;
+    width: 450px;
+    justify-content: center;
+    align-items: center;
 }
 .cameraIcon,.musicIcon,.photosIcon,.moviesIcon,.artIcon{
     width: 60px;
     height:70px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     transition: transform 0.2s ease-in-out;
 }
@@ -264,6 +273,7 @@ font-family: 'JetBrains Mono', sans-serif;
 }
 .iconText{
     margin-top: 0;
+    margin-bottom: 0;
     font-size: 0.8rem;
 }
 .cameraIcon:hover,.musicIcon:hover,.photosIcon:hover,.moviesIcon:hover,.artIcon:hover
