@@ -668,7 +668,17 @@ body {
         gap: 20px;
         flex-wrap: wrap;
     }
-
+    #catWindow{
+    width:300px;
+    height:180px;
+    position: absolute;
+    }
+    #randomCats{
+        display: flex;
+    }
+    .catContainer{
+        position:absolute;
+    }
 
 
     
